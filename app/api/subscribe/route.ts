@@ -1,8 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export const dynamic = "force-dynamic"
 
 export async function POST(request: NextRequest) {
@@ -27,6 +25,7 @@ export async function POST(request: NextRequest) {
 
     // Send notification email using Resend
     if (process.env.RESEND_API_KEY) {
+      const resend = new Resend(process.env.RESEND_API_KEY)
       await resend.emails.send({
         from: "Newsletter <onboarding@resend.dev>",
         to: "ejosephisang@ritebridge.com",
