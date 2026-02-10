@@ -27,6 +27,12 @@ export function EducationSection() {
 
   const certifications = [
     {
+      title: "Master of Public Health (MPH)",
+      issuer: "Johns Hopkins Bloomberg School of Public Health",
+      year: "2018",
+      description: "Advanced degree focused on health policy analysis, healthcare systems, and population health management.",
+    },
+    {
       title: "Certified Professional in Healthcare Quality (CPHQ)",
       issuer: "National Association for Healthcare Quality",
       year: "2022",
@@ -38,12 +44,6 @@ export function EducationSection() {
       issuer: "American Health Information Management Association",
       year: "2021",
       description: "Advanced expertise in clinical documentation integrity, coding accuracy, and compliance.",
-    },
-    {
-      title: "Certified Risk Adjustment Coder (CRC)",
-      issuer: "American Academy of Professional Coders",
-      year: "2020",
-      description: "Specialized in Medicare risk adjustment coding and documentation.",
     },
   ]
 
