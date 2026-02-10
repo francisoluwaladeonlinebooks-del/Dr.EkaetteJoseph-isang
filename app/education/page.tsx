@@ -15,8 +15,7 @@ export default function EducationPage() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Education & Credentials</h1>
               <p className="text-xl mb-8 text-primary-foreground/90">
-                A comprehensive educational foundation combining medical expertise, business acumen, and public health
-                knowledge to drive healthcare transformation.
+                Holding credentials including MD, MBA, MPH, CPHQ, CDIP, and PAHM - a comprehensive educational foundation combining medical expertise, business acumen, and public health knowledge to drive healthcare transformation.
               </p>
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/contact">Discuss Collaboration</Link>

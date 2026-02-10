@@ -54,7 +54,7 @@ export function HeroSection() {
               </h1>
               <div className="space-y-2">
                 <h2 className="text-base sm:text-lg lg:text-xl font-semibold leading-tight text-accent animate-fade-in-up animate-delay-100">
-                  MD, MBA, MPH, CPHQ, CDIP, CCS, CRC, PAHM
+                  MD, MBA, MPH, CPHQ, CDIP, PAHM
                 </h2>
                 <h3 className="text-base sm:text-lg lg:text-xl font-medium leading-tight text-white/90 animate-fade-in-up animate-delay-200">
                   Healthcare Executive
