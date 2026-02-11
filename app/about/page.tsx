@@ -196,7 +196,7 @@ export default function AboutPage() {
                 className={`transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
               >
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Dr. Ekaette Joseph-Isang, <span className="text-primary">MD, MBA, MPH, CPHQ</span>
+                  Dr. Ekaette Joseph-Isang <span className="text-primary">MD, MBA, MPH, CPHQ</span>
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                   Dr. Ekaette Joseph-Isang is a distinguished healthcare executive with extensive experience in

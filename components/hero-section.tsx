@@ -49,7 +49,7 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-balance animate-fade-in-up whitespace-nowrap overflow-hidden">
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight text-balance animate-fade-in-up whitespace-nowrap overflow-hidden">
                 Dr. Ekaette Joseph-Isang
               </h1>
               <div className="space-y-2">
