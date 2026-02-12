@@ -38,7 +38,7 @@ export function ServicesSection() {
     <section className="py-24 lg:py-40 bg-muted/30 relative overflow-hidden">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative">
         <div className="text-center space-y-6 mb-20 animate-fade-in-up">
           <h2 className="text-5xl lg:text-6xl font-bold text-foreground tracking-tight">What I Do</h2>
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed lg:leading-8">

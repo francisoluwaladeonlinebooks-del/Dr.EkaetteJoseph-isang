@@ -51,7 +51,7 @@ export function EducationSection() {
     <section className="py-20 lg:py-32 bg-muted/30 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-50" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative">
         <div className="text-center space-y-4 mb-16 animate-fade-in-up">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground tracking-tight">Education & Certifications</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">

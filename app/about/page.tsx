@@ -28,6 +28,7 @@ import {
   Youtube,
   Globe,
   Loader2,
+  ChevronLeft,
 } from "lucide-react"
 
 export default function AboutPage() {
@@ -151,6 +152,10 @@ export default function AboutPage() {
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
+          <Link href="/" className="absolute top-8 left-8 flex items-center gap-2 text-white hover:text-accent transition-colors duration-300 group">
+            <ChevronLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
+            <span className="text-sm font-medium">Back to Home</span>
+          </Link>
           <div
             className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
@@ -158,9 +163,11 @@ export default function AboutPage() {
               <Sparkles className="h-4 w-4 text-accent animate-spin-slow" />
               <span className="text-sm font-medium">Healthcare Executive</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up whitespace-nowrap">About Dr. Ekaette Joseph-Isang</h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in-up animate-delay-100">
-              Get to know the healthcare visionary transforming organizations across the nation.
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up whitespace-nowrap">
+              Dr. Ekaette Joseph-Isang
+            </h1>
+            <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed animate-fade-in-up animate-delay-100 max-w-3xl mx-auto">
+              Healthcare visionary and executive transforming organizations through strategic leadership, clinical excellence, and value-based innovation. Discover the journey of a physician, educator, and change agent dedicated to advancing healthcare outcomes nationwide.
             </p>
           </div>
         </div>
@@ -194,16 +201,21 @@ export default function AboutPage() {
               <div
                 className={`transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
               >
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-nowrap">
-                  Dr. Ekaette Joseph-Isang <span className="text-primary text-nowrap">MD, MBA, MPH, CPHQ, CDIP, PAHM</span>
-                </h2>
-                <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
+                <div>
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 whitespace-nowrap">
+                    Dr. Ekaette Joseph-Isang
+                  </h2>
+                  <p className="text-base sm:text-lg text-primary font-semibold mb-6">
+                    MD, MBA, MPH, CPHQ, CDIP, PAHM
+                  </p>
+                </div>
+                <p className="text-xl text-muted-foreground mb-6 leading-relaxed text-justify">
                   Dr. Ekaette Joseph-Isang is a distinguished healthcare executive with extensive experience in
                   value-based care transformation, clinical documentation integrity, and healthcare operations. As the
                   CEO of RiteBridge Consulting and Champions Coaching, she brings a unique combination of clinical
                   expertise and business acumen to healthcare organizations.
                 </p>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                <p className="text-lg text-muted-foreground mb-8 leading-relaxed text-justify">
                   With credentials spanning medicine, business, and public health, Dr. Ekaette has helped numerous
                   healthcare organizations improve clinical outcomes, optimize revenue cycles, and successfully
                   transition to value-based care models.

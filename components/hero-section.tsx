@@ -37,78 +37,80 @@ export function HeroSection() {
         ))}
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-32 w-full">
+      <div className="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-32 w-full">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-start lg:items-center">
           {/* Left content */}
           <div
             className={`space-y-10 text-white transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full glass animate-pulse-slow">
+            <div className="inline-flex items-center gap-3 px-4 py-2.5 rounded-full glass animate-pulse-slow border border-white/10">
               <Sparkles className="h-5 w-5 text-accent animate-spin-slow" />
-              <span className="text-lg sm:text-xl font-medium">Healthcare Innovation Leader</span>
+              <span className="text-sm sm:text-base font-semibold uppercase tracking-wider">Healthcare Innovation Leader</span>
             </div>
 
-            <div className="space-y-4">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-balance animate-fade-in-up whitespace-nowrap overflow-hidden">
-                Dr. Ekaette Joseph-Isang
-              </h1>
+            <div className="space-y-6">
               <div className="space-y-2">
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold leading-tight text-accent animate-fade-in-up animate-delay-100">
+                <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-black leading-tight text-white animate-fade-in-up whitespace-nowrap text-balance">
+                  Dr. Ekaette Joseph-Isang
+                </h1>
+              </div>
+              <div className="space-y-3">
+                <p className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight text-accent animate-fade-in-up animate-delay-100">
                   MD, MBA, MPH, CPHQ, CDIP, PAHM
-                </h2>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium leading-tight text-white/90 animate-fade-in-up animate-delay-200">
-                  Healthcare Executive
-                </h3>
+                </p>
+                <p className="text-lg sm:text-xl lg:text-2xl font-semibold leading-tight text-white/95 animate-fade-in-up animate-delay-200">
+                  Healthcare Executive & Strategic Advisor
+                </p>
               </div>
             </div>
 
-            <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed text-white/90 max-w-3xl animate-fade-in-up animate-delay-300">
-              Healthcare executive and strategic advisor with{" "}
-              <span className="font-semibold text-accent">20+ years</span> of combined experience scaling value-based care, risk adjustment, and population health programs. Expert in aligning clinical strategy, operations, and technology to drive sustainable outcomes, regulatory readiness, and ethical innovation.
+            <p className="text-lg sm:text-xl lg:text-xl leading-relaxed text-white/95 max-w-3xl animate-fade-in-up animate-delay-300">
+              With <span className="font-bold text-accent">20+ years</span> of combined expertise, I partner with healthcare organizations to transform operations through <span className="font-semibold text-accent">value-based care strategy</span>, <span className="font-semibold text-accent">clinical excellence</span>, and <span className="font-semibold text-accent">sustainable innovation</span>. From optimizing documentation integrity to scaling population health programs, I deliver outcomes that align clinical mission, operational efficiency, and financial performance.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-fade-in-up animate-delay-400">
+            <div className="flex flex-col sm:flex-row gap-4 pt-8 animate-fade-in-up animate-delay-400">
               <a href="https://calendar.app.google/VWSK6szrzCfvSMn1A" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
-                  className="bg-accent text-white hover:bg-accent/90 font-bold px-6 sm:px-10 py-5 sm:py-7 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105 group w-full sm:w-auto"
+                  className="bg-gradient-to-r from-accent to-accent/80 text-white hover:shadow-2xl hover:shadow-accent/40 font-bold px-8 sm:px-12 py-6 sm:py-7 text-lg sm:text-xl rounded-full shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 group w-full sm:w-auto border-0"
                 >
                   Schedule a Consultation
-                  <ArrowRight className="ml-2 h-4 sm:h-5 w-4 sm:w-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
               <a href="/services" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-secondary font-bold px-6 sm:px-10 py-5 sm:py-7 text-base sm:text-lg rounded-full bg-transparent backdrop-blur-sm transition-all duration-300 hover:scale-105 w-full"
+                  className="border-2 border-white/50 text-white hover:bg-white/10 hover:border-white font-bold px-8 sm:px-12 py-6 sm:py-7 text-lg sm:text-xl rounded-full bg-white/5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:-translate-y-1 w-full group"
                 >
                   Explore Services
+                  <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
             </div>
 
-            <div className="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-6 pt-8 animate-fade-in-up animate-delay-500">
-              <div className="glass rounded-lg sm:rounded-2xl p-3 sm:p-4 lg:p-6 text-center elevated-card hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center justify-center mb-2 sm:mb-3">
-                  <Award className="h-5 w-5 sm:h-7 lg:h-10 sm:w-7 lg:w-10 text-accent animate-bounce-slow" />
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-6 pt-12 animate-fade-in-up animate-delay-500">
+              <div className="glass rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-8 text-center elevated-card hover:scale-110 transition-all duration-300 border border-white/10 hover:border-accent/40 hover:bg-white/5 group cursor-pointer">
+                <div className="flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:scale-125 transition-transform duration-300">
+                  <Award className="h-6 w-6 sm:h-8 lg:h-12 sm:w-8 lg:w-12 text-accent animate-bounce-slow" />
                 </div>
-                <div className="text-lg sm:text-2xl lg:text-4xl font-bold text-white">20+</div>
-                <div className="text-xs sm:text-sm lg:text-base text-white/80 mt-1 sm:mt-2">Years Exp.</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-black text-white mb-1 sm:mb-2">20+</div>
+                <div className="text-xs sm:text-sm lg:text-base text-white/80 font-semibold uppercase tracking-wider">Years Exp.</div>
               </div>
-              <div className="glass rounded-lg sm:rounded-2xl p-3 sm:p-4 lg:p-6 text-center elevated-card hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center justify-center mb-2 sm:mb-3">
-                  <Users className="h-5 w-5 sm:h-7 lg:h-10 sm:w-7 lg:w-10 text-accent animate-bounce-slow animation-delay-200" />
+              <div className="glass rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-8 text-center elevated-card hover:scale-110 transition-all duration-300 border border-white/10 hover:border-accent/40 hover:bg-white/5 group cursor-pointer">
+                <div className="flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:scale-125 transition-transform duration-300">
+                  <Users className="h-6 w-6 sm:h-8 lg:h-12 sm:w-8 lg:w-12 text-accent animate-bounce-slow animation-delay-200" />
                 </div>
-                <div className="text-lg sm:text-2xl lg:text-4xl font-bold text-white">100K+</div>
-                <div className="text-xs sm:text-sm lg:text-base text-white/80 mt-1 sm:mt-2">Patients</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-black text-white mb-1 sm:mb-2">100K+</div>
+                <div className="text-xs sm:text-sm lg:text-base text-white/80 font-semibold uppercase tracking-wider">Patients</div>
               </div>
-              <div className="glass rounded-lg sm:rounded-2xl p-3 sm:p-4 lg:p-6 text-center elevated-card hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center justify-center mb-2 sm:mb-3">
-                  <TrendingUp className="h-5 w-5 sm:h-7 lg:h-10 sm:w-7 lg:w-10 text-accent animate-bounce-slow animation-delay-400" />
+              <div className="glass rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-8 text-center elevated-card hover:scale-110 transition-all duration-300 border border-white/10 hover:border-accent/40 hover:bg-white/5 group cursor-pointer">
+                <div className="flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:scale-125 transition-transform duration-300">
+                  <TrendingUp className="h-6 w-6 sm:h-8 lg:h-12 sm:w-8 lg:w-12 text-accent animate-bounce-slow animation-delay-400" />
                 </div>
-                <div className="text-lg sm:text-2xl lg:text-4xl font-bold text-white">$2.3M</div>
-                <div className="text-xs sm:text-sm lg:text-base text-white/80 mt-1 sm:mt-2">Savings</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-black text-white mb-1 sm:mb-2">$2.3M</div>
+                <div className="text-xs sm:text-sm lg:text-base text-white/80 font-semibold uppercase tracking-wider">Savings</div>
               </div>
             </div>
           </div>
