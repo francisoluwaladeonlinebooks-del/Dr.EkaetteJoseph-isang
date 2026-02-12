@@ -297,50 +297,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Quick Access Links */}
-      <section className="py-16 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Quick Access</h2>
-            <p className="text-muted-foreground">Explore specialized service categories</p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            <Link href="/organizations" className="group">
-              <div className="p-6 rounded-2xl bg-background border-2 hover:border-primary transition-all duration-300 hover:shadow-lg text-center">
-                <Users className="h-8 w-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold group-hover:text-primary transition-colors whitespace-nowrap">
-                  Organizational Solutions
-                </h3>
-              </div>
-            </Link>
-            <Link href="/coaching" className="group">
-              <div className="p-6 rounded-2xl bg-background border-2 hover:border-secondary transition-all duration-300 hover:shadow-lg text-center">
-                <Target className="h-8 w-8 text-secondary mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold group-hover:text-secondary transition-colors">Individual Coaching</h3>
-              </div>
-            </Link>
-            <Link href="/training" className="group">
-              <div className="p-6 rounded-2xl bg-background border-2 hover:border-primary transition-all duration-300 hover:shadow-lg text-center">
-                <GraduationCap className="h-8 w-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold group-hover:text-primary transition-colors">Online Training</h3>
-              </div>
-            </Link>
-            <Link href="/certification" className="group">
-              <div className="p-6 rounded-2xl bg-background border-2 hover:border-secondary transition-all duration-300 hover:shadow-lg text-center">
-                <Shield className="h-8 w-8 text-secondary mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold group-hover:text-secondary transition-colors">Certification</h3>
-              </div>
-            </Link>
-            <Link href="/assessment" className="group">
-              <div className="p-6 rounded-2xl bg-background border-2 hover:border-primary transition-all duration-300 hover:shadow-lg text-center">
-                <FileText className="h-8 w-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold group-hover:text-primary transition-colors">Assessment</h3>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Credentials Section */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-muted/50 to-transparent" />
@@ -350,12 +306,14 @@ export default function ServicesPage() {
             <p className="text-xl text-muted-foreground">Certified expertise across multiple healthcare domains</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
+              { badge: "MD", title: "Doctor of Medicine" },
+              { badge: "MBA", title: "Master of Business Administration" },
+              { badge: "MPH", title: "Master of Public Health" },
               { badge: "CPHQ", title: "Certified Professional in Healthcare Quality" },
               { badge: "CDIP", title: "Certified Documentation Integrity Practitioner" },
-              { badge: "CCS", title: "Certified Coding Specialist" },
-              { badge: "CRC", title: "Certified Risk Adjustment Coder" },
+              { badge: "PAHM", title: "Physician Advisor, Healthcare Management" },
             ].map((cred, index) => (
               <div
                 key={index}

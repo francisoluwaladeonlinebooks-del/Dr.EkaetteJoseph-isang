@@ -67,8 +67,8 @@ export function ContactSection() {
                     <Mail className="h-5 w-5 text-primary group-hover:text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">Email</p>
-                    <p className="text-foreground font-medium">ejosephisang@ritebridge.com</p>
+                    <p className="text-base font-medium text-muted-foreground">Email</p>
+                    <p className="text-lg text-foreground font-medium">ejosephisang@ritebridge.com</p>
                   </div>
                 </a>
 
@@ -80,8 +80,8 @@ export function ContactSection() {
                     <Phone className="h-5 w-5 text-primary group-hover:text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">Phone</p>
-                    <p className="text-foreground font-medium">770-572-1066</p>
+                    <p className="text-base font-medium text-muted-foreground">Phone</p>
+                    <p className="text-lg text-foreground font-medium">770-572-1066</p>
                   </div>
                 </a>
 
@@ -90,8 +90,8 @@ export function ContactSection() {
                     <MapPin className="h-5 w-5 text-primary group-hover:text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">Office</p>
-                    <p className="text-foreground font-medium">996 E New Circle Rd, Lexington KY 40505</p>
+                    <p className="text-base font-medium text-muted-foreground">Office</p>
+                    <p className="text-lg text-foreground font-medium">996 E New Circle Rd, Lexington KY 40505</p>
                   </div>
                 </div>
 

@@ -13,8 +13,8 @@ export default function EducationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Education & Credentials</h1>
-              <p className="text-xl mb-8 text-primary-foreground/90">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Education & Credentials</h1>
+              <p className="text-2xl mb-8 text-primary-foreground/90">
                 Holding credentials including MD, MBA, MPH, CPHQ, CDIP, and PAHM - a comprehensive educational foundation combining medical expertise, business acumen, and public health knowledge to drive healthcare transformation.
               </p>
               <Button size="lg" variant="secondary" asChild>
@@ -38,8 +38,8 @@ export default function EducationPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Academic Degrees</h2>
-            <p className="text-xl text-muted-foreground">Advanced degrees from prestigious institutions</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Academic Degrees</h2>
+            <p className="text-2xl text-muted-foreground">Advanced degrees from prestigious institutions</p>
           </div>
 
           <div className="space-y-8">
@@ -51,8 +51,8 @@ export default function EducationPage() {
                       <GraduationCap className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <CardTitle className="text-xl">Doctor of Medicine (MD)</CardTitle>
-                      <CardDescription className="text-lg">Medical School</CardDescription>
+                      <CardTitle className="text-2xl">Doctor of Medicine (MD)</CardTitle>
+                      <CardDescription className="text-xl">Medical School</CardDescription>
                     </div>
                   </div>
                   <Badge variant="secondary" className="text-sm">
@@ -83,8 +83,8 @@ export default function EducationPage() {
                       <GraduationCap className="h-6 w-6 text-secondary" />
                     </div>
                     <div>
-                      <CardTitle className="text-xl">Master of Business Administration (MBA)</CardTitle>
-                      <CardDescription className="text-lg">Business School</CardDescription>
+                      <CardTitle className="text-2xl">Master of Business Administration (MBA)</CardTitle>
+                      <CardDescription className="text-xl">Business School</CardDescription>
                     </div>
                   </div>
                   <Badge variant="secondary" className="text-sm">

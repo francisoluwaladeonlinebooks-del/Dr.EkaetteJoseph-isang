@@ -45,7 +45,7 @@ export function HeroSection() {
           >
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full glass animate-pulse-slow">
               <Sparkles className="h-5 w-5 text-accent animate-spin-slow" />
-              <span className="text-base font-medium">Healthcare Innovation Leader</span>
+              <span className="text-lg sm:text-xl font-medium">Healthcare Innovation Leader</span>
             </div>
 
             <div className="space-y-4">
@@ -53,16 +53,16 @@ export function HeroSection() {
                 Dr. Ekaette Joseph-Isang
               </h1>
               <div className="space-y-2">
-                <h2 className="text-base sm:text-lg lg:text-xl font-semibold leading-tight text-accent animate-fade-in-up animate-delay-100">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold leading-tight text-accent animate-fade-in-up animate-delay-100">
                   MD, MBA, MPH, CPHQ, CDIP, PAHM
                 </h2>
-                <h3 className="text-base sm:text-lg lg:text-xl font-medium leading-tight text-white/90 animate-fade-in-up animate-delay-200">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium leading-tight text-white/90 animate-fade-in-up animate-delay-200">
                   Healthcare Executive
                 </h3>
               </div>
             </div>
 
-            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 max-w-3xl animate-fade-in-up animate-delay-300">
+            <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed text-white/90 max-w-3xl animate-fade-in-up animate-delay-300">
               Healthcare executive and strategic advisor with{" "}
               <span className="font-semibold text-accent">20+ years</span> of combined experience scaling value-based care, risk adjustment, and population health programs. Expert in aligning clinical strategy, operations, and technology to drive sustainable outcomes, regulatory readiness, and ethical innovation.
             </p>

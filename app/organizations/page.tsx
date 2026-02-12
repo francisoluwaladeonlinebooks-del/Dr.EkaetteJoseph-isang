@@ -13,8 +13,8 @@ export default function HealthcareStrategyPage() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">Healthcare Strategy & Transformation</h1>
-            <p className="text-xl md:text-2xl text-white/90 leading-relaxed lg:leading-8 mb-10">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8">Healthcare Strategy & Transformation</h1>
+            <p className="text-2xl md:text-3xl text-white/90 leading-relaxed lg:leading-8 mb-10">
               Drive meaningful change in your healthcare organization through strategic transformation and operational excellence. Partner with Dr. Ekaette Joseph-Isang for proven healthcare transformation strategies.
             </p>
             <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0POpmmqtCOnoWSRqQtmriyEAFkkXrcpIhRMDGVygXPrk42Kmw6b6lVtSUNK36XBKbsKr6EA0vj" target="_blank" rel="noopener noreferrer">
@@ -30,10 +30,10 @@ export default function HealthcareStrategyPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
                 Why Healthcare Organizations Choose Dr. Ekaette
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed lg:leading-8">
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed lg:leading-8">
                 Proven expertise in healthcare transformation creates lasting positive change in organizational performance, patient outcomes, and operational efficiency
               </p>
             </div>
@@ -98,8 +98,8 @@ export default function HealthcareStrategyPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Healthcare Transformation Services</h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed lg:leading-8">
+              <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Healthcare Transformation Services</h2>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed lg:leading-8">
                 Comprehensive solutions tailored to your healthcare organization's unique needs
               </p>
             </div>
@@ -260,7 +260,7 @@ export default function HealthcareStrategyPage() {
       <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16">What Healthcare Organizations Say</h2>
+            <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-16">What Healthcare Organizations Say</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur-sm border border-border/50">
@@ -297,8 +297,8 @@ export default function HealthcareStrategyPage() {
           <div className="absolute bottom-0 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-blob animation-delay-2000" />
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Transform Your Healthcare Organization?</h2>
-          <p className="text-lg md:text-xl mb-10 text-white/90 max-w-3xl mx-auto leading-relaxed lg:leading-8">
+          <h2 className="text-5xl md:text-6xl font-bold mb-8">Ready to Transform Your Healthcare Organization?</h2>
+          <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto leading-relaxed lg:leading-8">
             Schedule a consultation to learn how Dr. Ekaette's proven strategies can drive meaningful change and improve patient outcomes in your organization
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

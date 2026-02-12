@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   },
   description:
     "Dr. Ekaette Joseph-Isang is a healthcare strategy and transformation executive specializing in CDI, revenue integrity, value-based care, and clinical documentation. CEO of RiteBridge Consulting and Champions Coaching.",
+  icons: {
+    icon: "/favicon.jpg",
+  },
   keywords: [
     "healthcare consultant",
     "clinical documentation integrity",

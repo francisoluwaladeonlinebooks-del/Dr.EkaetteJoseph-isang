@@ -37,36 +37,16 @@ export function AboutSection() {
 
           {/* Right content */}
           <div className="space-y-8 sm:space-y-10 animate-fade-in-up animate-delay-200">
-            <div className="space-y-4 sm:space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm sm:text-base font-medium">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                </span>
-                About Me
-              </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-foreground tracking-tight whitespace-nowrap">
-                Dr. Ekaette <span className="gradient-text text-chart-3">Joseph-Isang</span>
-              </h2>
-              <p className="text-lg sm:text-xl lg:text-2xl font-medium text-primary/90">
-                Healthcare Executive
-              </p>
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed lg:leading-8 text-justify">
-                Healthcare executive and strategic advisor with{" "}
-                <span className="font-semibold text-foreground">20+ years</span> of combined experience scaling value-based care, risk adjustment, and population health programs. Expert in aligning clinical strategy, operations, and technology to drive sustainable outcomes, regulatory readiness, and ethical innovation.
-              </p>
-            </div>
-
             <div className="space-y-6 sm:space-y-8">
-              <h3 className="text-xl sm:text-2xl font-bold text-foreground flex items-center gap-3">
+              <h3 className="text-2xl sm:text-3xl font-bold text-foreground flex items-center gap-3">
                 My Expertise
                 <div className="h-px flex-1 bg-gradient-to-r from-border to-transparent" />
               </h3>
               <div className="space-y-5 sm:space-y-6">
-                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed lg:leading-8 text-justify">
+                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed lg:leading-8 text-justify">
                   I provide fractional executive leadership and strategic advisory services focused on healthcare financing, cost management, and regulatory compliance within alternative payment and value-based care models. I help payer, provider, and health technology organizations optimize performance across Medicare Advantage, ACOs, and population health programs by aligning clinical strategy, operations, analytics, and governance to support sustainable financial and quality outcomes.
                 </p>
-                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed lg:leading-8 text-justify">
+                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed lg:leading-8 text-justify">
                   I specialize in audit readiness and compliance management, designing documentation integrity, regulatory governance, and monitoring frameworks that support CMS, RADV, and NCQA requirements. I continuously track and analyze policy and regulatory changes, assess operational and financial impact, and deliver clear reporting and guidance to executive leadership. This proactive approach ensures organizations remain compliant, audit-ready, and strategically positioned as payment models, regulations, and healthcare financing policies continue to evolve.
                 </p>
               </div>
