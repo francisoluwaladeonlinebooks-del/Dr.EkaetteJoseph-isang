@@ -306,9 +306,9 @@ export default function ServicesPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             <Link href="/organizations" className="group">
-              <div className="p-6 rounded-2xl bg-background border-2 hover:border-primary transition-all duration-300 hover:shadow-lg text-center">
+              <div className="p-6 rounded-2xl bg-background border-2 hover:border-primary transition-all duration-300 hover:shadow-lg text-center min-w-48">
                 <Users className="h-8 w-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold group-hover:text-primary transition-colors whitespace-nowrap">
+                <h3 className="font-semibold group-hover:text-primary transition-colors text-nowrap">
                   Organizational Solutions
                 </h3>
               </div>
@@ -316,7 +316,7 @@ export default function ServicesPage() {
             <Link href="/coaching" className="group">
               <div className="p-6 rounded-2xl bg-background border-2 hover:border-secondary transition-all duration-300 hover:shadow-lg text-center">
                 <Target className="h-8 w-8 text-secondary mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold group-hover:text-secondary transition-colors">Individual Coaching</h3>
+                <h3 className="font-semibold group-hover:text-secondary transition-colors text-nowrap">Individual Coaching</h3>
               </div>
             </Link>
             <Link href="/training" className="group">
@@ -350,12 +350,14 @@ export default function ServicesPage() {
             <p className="text-xl text-muted-foreground">Certified expertise across multiple healthcare domains</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
+              { badge: "MD", title: "Doctor of Medicine" },
+              { badge: "MBA", title: "Master of Business Administration" },
+              { badge: "MPH", title: "Master of Public Health" },
               { badge: "CPHQ", title: "Certified Professional in Healthcare Quality" },
               { badge: "CDIP", title: "Certified Documentation Integrity Practitioner" },
-              { badge: "CCS", title: "Certified Coding Specialist" },
-              { badge: "CRC", title: "Certified Risk Adjustment Coder" },
+              { badge: "PAHM", title: "Physician Advisor, Healthcare Management" },
             ].map((cred, index) => (
               <div
                 key={index}
