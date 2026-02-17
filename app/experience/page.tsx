@@ -110,15 +110,13 @@ export default function ExperiencePage() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Apr 2024 - Present · 1 yr 11 months</span>
+                      <span>Apr 2024 - Present</span>
                     </div>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-muted-foreground text-justify">I work closely with senior leadership teams on enterprise strategy, transformation, and digital innovation across value-based care, population health, risk adjustment, clinical documentation improvement (CDI), and health IT. I serve as a trusted advisor to payers, providers, and healthcare technology organizations, helping align clinical strategy, operating models, and digital platforms to improve performance, scalability, regulatory readiness, and Medicare Advantage outcomes.</p>
-                <p className="mb-4 text-muted-foreground text-justify">My work includes leading and advising on enterprise transformation roadmaps tied to growth and value-based outcomes, spanning risk adjustment and CDI strategy across inpatient and outpatient settings, analytics and digital health platform implementations, documentation integrity, and audit preparedness. I guide organizations through vendor evaluation and selection, provider incentive design, quality governance, and performance measurement across CMS Stars, HEDIS, CAHPS, HOS, MRA, encounter data integrity, and RADV readiness—ensuring technology and operational investments deliver measurable enterprise value while protecting revenue.</p>
-                <p className="mb-4 text-muted-foreground text-justify">In parallel, I partner with healthcare SaaS and digital health companies on product strategy, customer success, and go-to-market alignment, ensuring solutions meet clinical, operational, and regulatory demands. Known for clarity and fast paced delivery, I bridge strategy and execution, translating clinical insight and data into scalable, population-centered initiatives that drive physician adoption, improve member experience and outcomes, and position organizations for sustained success in an increasingly outcomes-driven healthcare landscape.</p>
+                <p className="mb-4 text-muted-foreground">Enterprise strategy advisor for payers, providers, and healthcare technology organizations. Led transformation initiatives across value-based care, risk adjustment, CDI, and health IT, with measurable impact on Medicare Advantage outcomes and revenue protection.</p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Enterprise Strategy</Badge>
                   <Badge variant="secondary">Value-Based Care</Badge>
@@ -139,45 +137,19 @@ export default function ExperiencePage() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Aug 2022 - Apr 2024 · 1 yr 9 months</span>
+                      <span>Aug 2022 - Apr 2024</span>
                     </div>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-muted-foreground text-justify">Led enterprise transformation initiatives aligning clinical strategy, value-based care performance, CDI, and compliance across a multi-site healthcare organization. Partnered with executive leadership and physicians to optimize care delivery models, documentation integrity, quality outcomes, and risk performance.</p>
-                <p className="mb-4 text-muted-foreground text-justify">Provided strategic oversight for clinical documentation improvement (CDI), regulatory compliance, and audit readiness, translating clinical insight and data into scalable operational and financial impact. Drove physician engagement, change management, and system-wide adoption of performance-driven workflows.</p>
+                <p className="mb-4 text-muted-foreground">Led enterprise transformation across multi-site healthcare organization, aligning clinical strategy, value-based care performance, and CDI. Drove physician engagement and system-wide adoption of performance-driven workflows.</p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Creativity and Innovation</Badge>
-                  <Badge variant="secondary">Documentation Practices</Badge>
-                  <Badge variant="secondary">Auditing</Badge>
-                  <Badge variant="secondary">CRM</Badge>
-                  <Badge variant="secondary">Management</Badge>
-                  <Badge variant="secondary">Cross-functional Team Leadership</Badge>
+                  <Badge variant="secondary">Enterprise Transformation</Badge>
                   <Badge variant="secondary">Clinical Documentation</Badge>
-                  <Badge variant="secondary">ICD-10-CM</Badge>
-                  <Badge variant="secondary">DRG</Badge>
-                  <Badge variant="secondary">Interpersonal Skills</Badge>
-                  <Badge variant="secondary">Health Plans</Badge>
-                  <Badge variant="secondary">Risk Adjustment</Badge>
-                  <Badge variant="secondary">Healthcare Quality</Badge>
-                  <Badge variant="secondary">Pay for Performance</Badge>
-                  <Badge variant="secondary">Health Informatics</Badge>
-                  <Badge variant="secondary">Managed Care</Badge>
-                  <Badge variant="secondary">Training</Badge>
-                  <Badge variant="secondary">Health Insurance</Badge>
-                  <Badge variant="secondary">Population Health Management</Badge>
-                  <Badge variant="secondary">Medicare/Medicaid Reimbursement</Badge>
-                  <Badge variant="secondary">Communication</Badge>
-                  <Badge variant="secondary">Health Policy</Badge>
-                  <Badge variant="secondary">ACOs</Badge>
-                  <Badge variant="secondary">ICD-10-PCS</Badge>
-                  <Badge variant="secondary">HCC Coding</Badge>
-                  <Badge variant="secondary">Oral Communication</Badge>
-                  <Badge variant="secondary">Strategic Planning</Badge>
-                  <Badge variant="secondary">Leadership</Badge>
-                  <Badge variant="secondary">Provider enablement</Badge>
                   <Badge variant="secondary">Value-Based Care</Badge>
+                  <Badge variant="secondary">Strategic Leadership</Badge>
+                  <Badge variant="secondary">Change Management</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -192,47 +164,19 @@ export default function ExperiencePage() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Feb 2021 - Aug 2022 · 1 yr 7 months</span>
+                      <span>Feb 2021 - Aug 2022</span>
                     </div>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-muted-foreground text-justify">Worked on payer–provider strategy engagements focused on innovative payment models, value-based care adoption, and performance optimization across Medicare and commercial populations. Collaborated on complex, multi-payer initiatives deploying advanced analytics, provider performance tools, and high-risk member stratification, while training and engaging providers to ensure sustained adoption and measurable results.</p>
-                <p className="mb-4 text-muted-foreground text-justify">Delivered high-impact outcomes by implementing alternative payment and value-based care models grounded in cost, quality, and utilization analytics. Developed and executed a Medicare Stars strategy for a Fortune 50 health insurance plan serving approximately 5 million members, improving member experience and elevating Star performance. Led market and competitive intelligence analyses that informed strategic growth decisions, including the acquisition of a healthcare startup, contributing to a 25% increase in customer base.</p>
-                <p className="mb-4 text-muted-foreground text-justify">Drove operational and financial performance through digital and payment transformation initiatives, including a project that designed RPA processes that automated clinical documentation solutions that reduced provider documentation burden by 25% and saved 10+ hours per week in clinical workflows. Managed the design of a new physician fee schedule, generating $2.3M in annual savings for a major payer while preserving strong provider relationships and minimizing abrasion, in close partnership with executives, clinicians, analytics teams, and technology partners.</p>
+                <p className="mb-4 text-muted-foreground">Payer-provider strategy consultant leading value-based care adoption and payment model innovation. Developed Medicare Stars strategy for Fortune 50 health plan (5M members) and generated $2.3M in physician fee schedule savings.</p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">HIPAA</Badge>
-                  <Badge variant="secondary">Health Information Systems</Badge>
-                  <Badge variant="secondary">Creativity and Innovation</Badge>
-                  <Badge variant="secondary">Documentation Practices</Badge>
-                  <Badge variant="secondary">Quality Of Care</Badge>
-                  <Badge variant="secondary">Auditing</Badge>
-                  <Badge variant="secondary">CRM</Badge>
-                  <Badge variant="secondary">Management</Badge>
-                  <Badge variant="secondary">Medicare</Badge>
-                  <Badge variant="secondary">Clinical Documentation</Badge>
-                  <Badge variant="secondary">ICD-10-CM</Badge>
-                  <Badge variant="secondary">Interpersonal Skills</Badge>
-                  <Badge variant="secondary">Risk Adjustment</Badge>
-                  <Badge variant="secondary">Healthcare Quality</Badge>
-                  <Badge variant="secondary">Health Informatics</Badge>
-                  <Badge variant="secondary">Health Information Management</Badge>
-                  <Badge variant="secondary">Managed Care</Badge>
-                  <Badge variant="secondary">Project Management</Badge>
-                  <Badge variant="secondary">Training</Badge>
-                  <Badge variant="secondary">Health Insurance</Badge>
-                  <Badge variant="secondary">Population Health Management</Badge>
-                  <Badge variant="secondary">Health Policy</Badge>
-                  <Badge variant="secondary">ACOs</Badge>
-                  <Badge variant="secondary">HEDIS</Badge>
-                  <Badge variant="secondary">ICD-10-PCS</Badge>
-                  <Badge variant="secondary">Oral Communication</Badge>
-                  <Badge variant="secondary">Strategic Planning</Badge>
-                  <Badge variant="secondary">Payvider strategy</Badge>
-                  <Badge variant="secondary">Leadership</Badge>
-                  <Badge variant="secondary">Provider enablement</Badge>
+                  <Badge variant="secondary">Payer-Provider Strategy</Badge>
                   <Badge variant="secondary">Value-Based Care</Badge>
+                  <Badge variant="secondary">Medicare Strategy</Badge>
+                  <Badge variant="secondary">Digital Transformation</Badge>
+                  <Badge variant="secondary">Analytics</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -247,31 +191,18 @@ export default function ExperiencePage() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Sep 2017 - Jan 2021 · 3 yrs 5 months</span>
+                      <span>Sep 2017 - Jan 2021</span>
                     </div>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-muted-foreground text-justify">Executed value transformation by leveraging expertise in clinical documentation improvement, HEDIS and risk adjustment to investigate, research, and implement solutions to improve cost-efficient management of Medicare population. In Pareto program, identified and documented the burden of illness for Medicare patients and conducted extensive review of medical information to identify and collate determinants of member health.</p>
-                <p className="mb-4 text-muted-foreground text-justify">Identified high utilizers and implemented proactive solutions that slowed chronic disease progression. Ensured that patients had fewer admissions days by ensuring adherence to care plans.</p>
+                <p className="mb-4 text-muted-foreground">Transformed Medicare population health management through clinical documentation improvement and risk adjustment expertise. Identified and managed high-utilizers while improving care adherence and reducing hospital admissions.</p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Medicine</Badge>
-                  <Badge variant="secondary">Creativity and Innovation</Badge>
-                  <Badge variant="secondary">Microsoft Office</Badge>
-                  <Badge variant="secondary">CRM</Badge>
-                  <Badge variant="secondary">Management</Badge>
                   <Badge variant="secondary">Clinical Documentation</Badge>
-                  <Badge variant="secondary">Interpersonal Skills</Badge>
-                  <Badge variant="secondary">EMR</Badge>
-                  <Badge variant="secondary">Managed Care</Badge>
-                  <Badge variant="secondary">Project Management</Badge>
-                  <Badge variant="secondary">Training</Badge>
-                  <Badge variant="secondary">Process Automation</Badge>
-                  <Badge variant="secondary">HCC Coding</Badge>
-                  <Badge variant="secondary">Oral Communication</Badge>
-                  <Badge variant="secondary">Strategic Planning</Badge>
-                  <Badge variant="secondary">Leadership</Badge>
+                  <Badge variant="secondary">Risk Adjustment</Badge>
+                  <Badge variant="secondary">Population Health</Badge>
+                  <Badge variant="secondary">HEDIS</Badge>
                   <Badge variant="secondary">Value-Based Care</Badge>
                 </div>
               </CardContent>
@@ -287,19 +218,18 @@ export default function ExperiencePage() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Sep 2014 - Sep 2017 · 3 yrs 1 month</span>
+                      <span>Sep 2014 - Sep 2017</span>
                     </div>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-muted-foreground text-justify">Population Health and Applied Informatics Fellow leading cross-sectoral collaborations to bridge governmental public health and hospital systems on a Centers for Disease Control and Prevention (CDC) funded program and administered by the Council of State and Territorial Epidemiologists (CSTE).</p>
-                <p className="mb-4 text-muted-foreground text-justify">Provided strategic leadership and direction for informatics in KDPH by launching the first Informatics Work Group comprising 30 members from three organizations. Led informatics projects and provided day-to-day process oversight, directing project scope, engaging stakeholders and delivering results. All project results are either published in journals or presented at conferences with some adapted for use by other public health agencies.</p>
+                <p className="mb-4 text-muted-foreground">CDC-funded informatics fellow bridging public health and hospital systems. Launched first Informatics Work Group (30 members) and led projects resulting in publications and conference presentations.</p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Creativity and Innovation</Badge>
-                  <Badge variant="secondary">Interpersonal Skills</Badge>
+                  <Badge variant="secondary">Population Health</Badge>
+                  <Badge variant="secondary">Informatics</Badge>
+                  <Badge variant="secondary">Strategic Leadership</Badge>
                   <Badge variant="secondary">Training</Badge>
-                  <Badge variant="secondary">Oral Communication</Badge>
                   <Badge variant="secondary">Leadership</Badge>
                 </div>
               </CardContent>
@@ -315,20 +245,18 @@ export default function ExperiencePage() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Mar 2012 - Sep 2017 · 5 yrs 7 months</span>
+                      <span>Mar 2012 - Sep 2017</span>
                     </div>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-muted-foreground text-justify">Performed medical chart reviews to facilitate appropriate code assignment. Served as lead CDI and DRG auditor across multiple facilities per contract. Provided consultancy services on electronic health records and clinical documentation management systems.</p>
-                <p className="mb-4 text-muted-foreground text-justify">Served as an independent consultant, combining both clinical and Health Information technology expertise to deliver training to physicians, nurses, and ancillary staff on the use of Epic, Cerner, McKesson, Meditech, eClinicalWorks, and Allscripts Electronic Health Records (EHR) systems. Worked with hospital systems to lead EHR transitioning efforts and support EHR optimization processes. Designed and/or redesigned clinical workflows to support physician utilization of EHR.</p>
+                <p className="mb-4 text-muted-foreground">Lead CDI and DRG auditor across multiple healthcare facilities. Provided EHR training and consultancy for Epic, Cerner, Meditech and other systems, supporting EHR optimization and clinical workflow redesign.</p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Creativity and Innovation</Badge>
-                  <Badge variant="secondary">Auditing</Badge>
-                  <Badge variant="secondary">Interpersonal Skills</Badge>
+                  <Badge variant="secondary">CDI Auditing</Badge>
+                  <Badge variant="secondary">EHR Systems</Badge>
+                  <Badge variant="secondary">Clinical Workflows</Badge>
                   <Badge variant="secondary">Training</Badge>
-                  <Badge variant="secondary">Oral Communication</Badge>
                   <Badge variant="secondary">Leadership</Badge>
                 </div>
               </CardContent>
@@ -344,11 +272,7 @@ export default function ExperiencePage() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Mar 2010 - Sep 2017 · 7 yrs 7 months</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <MapPin className="h-4 w-4" />
-                      <span>Georgia, United States</span>
+                      <span>Mar 2010 - Sep 2017</span>
                     </div>
                   </div>
                 </div>
@@ -374,11 +298,7 @@ export default function ExperiencePage() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Aug 2006 - Dec 2008 · 2 yrs 5 months</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <MapPin className="h-4 w-4" />
-                      <span>Uyo, Akwa Ibom State, Nigeria</span>
+                      <span>Aug 2006 - Dec 2008</span>
                     </div>
                   </div>
                 </div>
