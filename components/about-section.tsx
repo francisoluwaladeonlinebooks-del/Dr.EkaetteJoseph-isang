@@ -43,10 +43,10 @@ export function AboutSection() {
                 <div className="h-px flex-1 bg-gradient-to-r from-border to-transparent" />
               </h3>
               <div className="space-y-5 sm:space-y-6">
-                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed lg:leading-8 text-justify">
+                <p className="text-2xl sm:text-3xl lg:text-3xl text-muted-foreground leading-relaxed lg:leading-9 text-justify">
                   I provide fractional executive leadership and strategic advisory services focused on healthcare financing, cost management, and regulatory compliance within alternative payment and value-based care models. I help payer, provider, and health technology organizations optimize performance across Medicare Advantage, ACOs, and population health programs by aligning clinical strategy, operations, analytics, and governance to support sustainable financial and quality outcomes.
                 </p>
-                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed lg:leading-8 text-justify">
+                <p className="text-2xl sm:text-3xl lg:text-3xl text-muted-foreground leading-relaxed lg:leading-9 text-justify">
                   I specialize in audit readiness and compliance management, designing documentation integrity, regulatory governance, and monitoring frameworks that support CMS, RADV, and NCQA requirements. I continuously track and analyze policy and regulatory changes, assess operational and financial impact, and deliver clear reporting and guidance to executive leadership. This proactive approach ensures organizations remain compliant, audit-ready, and strategically positioned as payment models, regulations, and healthcare financing policies continue to evolve.
                 </p>
               </div>

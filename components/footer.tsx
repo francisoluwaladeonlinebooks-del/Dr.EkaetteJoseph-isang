@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -21,11 +21,31 @@ export function Footer() {
     setIsSubmitting(true)
     setError("")
 
+    // If reCAPTCHA site key is provided via NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+    // attempt to get a token and include it in the request body.
+    const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+    let recaptchaToken: string | undefined
+    if (siteKey) {
+      try {
+        const grecaptcha = (window as any).grecaptcha
+        if (!grecaptcha) {
+          throw new Error("reCAPTCHA not loaded")
+        }
+        await new Promise((resolve) => grecaptcha.ready(resolve))
+        recaptchaToken = await grecaptcha.execute(siteKey, { action: "subscribe" })
+      } catch (rcErr) {
+        console.error("reCAPTCHA error:", rcErr)
+        setError("reCAPTCHA verification failed. Please try again.")
+        setIsSubmitting(false)
+        return
+      }
+    }
+
     try {
       const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, recaptchaToken }),
       })
 
       const data = await response.json()
@@ -43,6 +63,26 @@ export function Footer() {
       setIsSubmitting(false)
     }
   }
+
+  // Inject reCAPTCHA script when a site key is available.
+  useEffect(() => {
+    const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+    if (!siteKey) return
+
+    const id = `recaptcha-script-${siteKey}`
+    if (document.getElementById(id)) return
+
+    const script = document.createElement("script")
+    script.id = id
+    script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`
+    script.async = true
+    script.defer = true
+    document.body.appendChild(script)
+
+    return () => {
+      // keep script for the session; no cleanup needed normally
+    }
+  }, [])
 
   return (
     <footer className="bg-gradient-to-br from-secondary via-secondary to-secondary/95 text-secondary-foreground border-t border-secondary/50">

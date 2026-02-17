@@ -28,3 +28,33 @@ Continue building your app on:
 2. Deploy your chats from the v0 interface
 3. Changes are automatically pushed to this repository
 4. Vercel deploys the latest version from this repository
+
+## Environment & Security
+
+- Store secrets (like the Resend API key) in environment variables and never
+	commit them to the repository. Copy `.env.example` to `.env.local` and set
+	`RESEND_API_KEY` there for local development.
+- If a secret is accidentally exposed (for example by pasting it into a chat
+	or committing it), rotate the key immediately from the provider dashboard.
+- For production, use a secret manager (Vercel Environment Variables, AWS
+	Secrets Manager, Google Secret Manager, or similar). Do not embed secrets
+	in source files.
+- Consider adding a CAPTCHA (reCAPTCHA, hCaptcha) and a server-side rate
+	limiter backed by Redis/Upstash/Cloudflare KV to protect the `/api/subscribe`
+	endpoint from automated abuse.
+
+### reCAPTCHA setup
+
+- To enable reCAPTCHA protection for the subscribe form, obtain keys from
+	Google reCAPTCHA (v3 or v2). Set the site key in a local env var exposed to
+	the client and the secret in server-only env vars.
+
+	```bash
+	# local (do NOT commit)
+	NEXT_PUBLIC_RECAPTCHA_SITE_KEY=your_site_key
+	RECAPTCHA_SECRET=your_secret
+	```
+
+- The app will include the site key on the client and send a token to
+	`/api/subscribe`, where the server verifies it with Google before accepting
+	the subscription.

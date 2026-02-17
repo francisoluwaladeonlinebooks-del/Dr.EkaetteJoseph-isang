@@ -182,8 +182,12 @@ export default function RootLayout({
         {children}
         <Footer />
         <BackToTop />
-        <Analytics />
-        <SpeedInsights />
+        {process.env.NODE_ENV === "production" ? (
+          <>
+            <Analytics />
+            <SpeedInsights />
+          </>
+        ) : null}
       </body>
     </html>
   )
