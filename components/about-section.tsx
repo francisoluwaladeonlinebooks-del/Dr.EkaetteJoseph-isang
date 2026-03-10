@@ -20,6 +20,7 @@ export function AboutSection() {
                 fill
                 className="object-cover transition duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                priority
               />
               <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 bg-secondary/80 p-3 sm:p-4 rounded-xl backdrop-blur-md border border-white/20 shadow-lg animate-fade-in-up animate-delay-300">
                 <div className="flex items-center gap-3">
