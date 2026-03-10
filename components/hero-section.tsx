@@ -7,9 +7,18 @@ import { useEffect, useState } from "react"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
+  const [particles, setParticles] = useState([])
 
   useEffect(() => {
     setIsVisible(true)
+    // Generate particle positions only on client side to avoid hydration mismatch
+    const generatedParticles = [...Array(20)].map((_, i) => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      animationDelay: `${Math.random() * 5}s`,
+      animationDuration: `${3 + Math.random() * 4}s`,
+    }))
+    setParticles(generatedParticles)
   }, [])
 
   return (
@@ -23,16 +32,11 @@ export function HeroSection() {
 
       {/* Particle effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {particles.map((particle, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-white/20 rounded-full animate-float"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${3 + Math.random() * 4}s`,
-            }}
+            style={particle}
           />
         ))}
       </div>

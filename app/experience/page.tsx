@@ -44,6 +44,7 @@ export default function ExperiencePage() {
                 width={500}
                 height={600}
                 className="relative rounded-2xl shadow-2xl group-hover:scale-[1.02] transition-transform duration-500"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
           </div>
