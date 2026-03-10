@@ -90,36 +90,51 @@ export async function POST(request: NextRequest) {
     // If reCAPTCHA is configured on the server, verify the token before
     // continuing. This protects the endpoint from automated abuse.
     const recaptchaSecret = process.env.RECAPTCHA_SECRET
+    const isProduction = process.env.NODE_ENV === 'production'
+    
     if (recaptchaSecret) {
       if (!recaptchaToken) {
-        return NextResponse.json({ error: "reCAPTCHA token missing" }, { status: 400 })
-      }
-
-      try {
-        const params = new URLSearchParams()
-        params.append("secret", recaptchaSecret)
-        params.append("response", recaptchaToken)
-
-        const verifyRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: params.toString(),
-        })
-
-        const verifyJson = await verifyRes.json()
-        if (!verifyJson.success) {
-          console.warn("reCAPTCHA verification failed:", verifyJson)
-          return NextResponse.json({ error: "reCAPTCHA verification failed" }, { status: 403 })
+        // In development, allow missing token; in production, require it
+        if (isProduction) {
+          return NextResponse.json({ error: "reCAPTCHA token missing" }, { status: 400 })
         }
+        console.warn("reCAPTCHA token missing in development mode - skipping verification")
+      } else {
+        try {
+          const params = new URLSearchParams()
+          params.append("secret", recaptchaSecret)
+          params.append("response", recaptchaToken)
 
-        // Optional: check score for v3 (if provided)
-        if (typeof verifyJson.score === "number" && verifyJson.score < 0.4) {
-          console.warn("reCAPTCHA low score:", verifyJson.score)
-          return NextResponse.json({ error: "reCAPTCHA score too low" }, { status: 403 })
+          const verifyRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: params.toString(),
+          })
+
+          const verifyJson = await verifyRes.json()
+          if (!verifyJson.success) {
+            console.warn("reCAPTCHA verification failed:", verifyJson)
+            // In development, warn but allow; in production, reject
+            if (isProduction) {
+              return NextResponse.json({ error: "reCAPTCHA verification failed" }, { status: 403 })
+            }
+          }
+
+          // Optional: check score for v3 (if provided)
+          if (typeof verifyJson.score === "number" && verifyJson.score < 0.4) {
+            console.warn("reCAPTCHA low score:", verifyJson.score)
+            if (isProduction) {
+              return NextResponse.json({ error: "reCAPTCHA score too low" }, { status: 403 })
+            }
+          }
+        } catch (rcErr) {
+          console.error("reCAPTCHA verification error:", rcErr)
+          // In development, warn but allow; in production, reject
+          if (isProduction) {
+            return NextResponse.json({ error: "reCAPTCHA verification error" }, { status: 500 })
+          }
+          console.warn("reCAPTCHA error in development mode - continuing with subscription")
         }
-      } catch (rcErr) {
-        console.error("reCAPTCHA verification error:", rcErr)
-        return NextResponse.json({ error: "reCAPTCHA verification error" }, { status: 500 })
       }
     }
 
