@@ -79,7 +79,42 @@ export function Footer() {
     script.defer = true
     document.body.appendChild(script)
 
+    // Hide reCAPTCHA badge by default and show only when scrolled to bottom
+    const hideRecaptchaBadge = () => {
+      const badge = document.querySelector('.grecaptcha-badge') as HTMLElement
+      if (badge) {
+        badge.style.display = 'none'
+      }
+    }
+
+    const showRecaptchaBadge = () => {
+      const badge = document.querySelector('.grecaptcha-badge') as HTMLElement
+      if (badge) {
+        badge.style.display = 'block'
+      }
+    }
+
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+      const windowHeight = window.innerHeight
+      const documentHeight = document.documentElement.scrollHeight
+
+      // Show badge when scrolled to within 100px of bottom
+      if (scrollTop + windowHeight >= documentHeight - 100) {
+        showRecaptchaBadge()
+      } else {
+        hideRecaptchaBadge()
+      }
+    }
+
+    // Hide badge initially
+    setTimeout(hideRecaptchaBadge, 1000)
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll)
+
     return () => {
+      window.removeEventListener('scroll', handleScroll)
       // keep script for the session; no cleanup needed normally
     }
   }, [])
